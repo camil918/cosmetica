@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio - Belleza y Estética</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #ffcccb, #e6e6fa); 
+            color: #333; 
+        }
+        header {
+            padding: 20px 0;
+            text-align: center;
+            background-color: rgba(255, 192, 203, 0.8); 
+        }
+        h1, h2 {
+            margin-bottom: 20px; 
+        }
+        .imagenes-productos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; 
+            gap: 30px; 
+        }
+        .imagen-grande {
+            width: 350px; 
+            height: auto; 
+            border-radius: 8px; 
+            transition: transform 0.3s; 
+        }
+        .imagen-grande:hover {
+            transform: scale(1.1); 
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #d3d3d3; /* Fondo gris claro para el pie de página */
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Bienvenida a Nuestra Boutique de Belleza</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="productos.html">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="container my-5">
+        <h2>¡Bienvenidos a Nuestro Espacio de Belleza!</h2>
+        <div class="imagenes-productos">
+            <img src="imagenes.jpg/cosmetc.jpg" alt="Servicio de Belleza" class="imagen-grande">
+            <img src="imagenes.jpg/estilistas.jpg" alt="Estética Facial" class="imagen-grande">
+        </div>
+        <p class="text-center">Descubre nuestros servicios y encuentra el tratamiento ideal para realzar tu belleza.</p>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2024 BELLEZA Y ESTÉTICA. Todos los derechos reservados.</p>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Boutique de Belleza y Estética</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #ffcccb, #e6e6fa); 
+            color: #333; 
+        }
+        header {
+            padding: 20px 0;
+            text-align: center;
+            background-color: rgba(255, 192, 203, 0.8); 
+        }
+        h1, h2 {
+            margin-bottom: 20px; 
+        }
+        .imagenes-productos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; 
+            gap: 30px; 
+        }
+        .imagen-grande {
+            width: 350px; 
+            height: auto; 
+            border-radius: 8px; 
+            transition: transform 0.3s; 
+        }
+        .imagen-grande:hover {
+            transform: scale(1.1); 
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #d3d3d3; 
+        }
+    </style>
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Belleza y Estética</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="container my-5 text-center">
+        <h2>¡Bienvenidos a Nuestra Boutique de Belleza!</h2>
+        <div class="imagenes-productos">
+            <img src="imagenes.jpg/cosmetc.jpg" alt="Servicio de Belleza" class="imagen-grande">
+            <img src="imagenes.jpg/estilistas.jpg" alt="Estética Facial" class="imagen-grande">
+        </div>
+        <p class="mt-4">Descubre nuestros servicios y encuentra el tratamiento ideal para realzar tu belleza.</p>
+    </section>
+    
+    <section id="video" class="container my-5">
+        <h2 class="text-center">Descubre Nuestros Tratamientos</h2>
+        <div class="d-flex justify-content-center">
+            <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/EfDe9RzcdCY?si=-yX8Hr7pwIrz20__" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="servicios" class="container my-5 text-center">
+        <h2>¡Nuestros Servicios!</h2>
+        <p>Conoce más de nuestros servicios y tratamientos para mejorar tu bienestar y belleza.</p>
+    </section>
+
+    <section id="contacto" class="container my-5">
+        <h2 class="text-center">Contáctanos</h2>
+        <p class="text-center">Visítanos o llámanos para más información.</p>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2024 Belleza y Estética. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

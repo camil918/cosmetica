@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Boutique de Belleza y Estética</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fdf5e6; 
+        }
+        header {
+            background: linear-gradient(to right, #f1a7b8, #f9e4b7); 
+        }
+        footer {
+            background: #ffb6c1; 
+        }
+        .card {
+            transition: transform 0.2s; 
+        }
+        .card:hover {
+            transform: scale(1.05); 
+        }
+        .card-img-top {
+            height: 200px; 
+            object-fit: cover; 
+        }
+    </style>
+</head>
+<body>
+
+    <header class="text-white text-center p-3">
+        <h1>Servicios de Belleza y Estética</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="index.html" class="nav-link text-white">Inicio</a></li>
+                <li class="nav-item"><a href="servicios.html" class="nav-link text-white">Servicios</a></li>
+                <li class="nav-item"><a href="contacto.html" class="nav-link text-white">Contacto</a></li>
+                <li class="nav-item"><a href="productos.html" class="nav-link text-white">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Nuestros Servicios</h2>
+        <div class="row">
+
+            <!-- Cortes de Pelo -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="imagenes.jpg/cortes de cabello.jpg" alt="Cortes de Pelo" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Cortes de Pelo</h3>
+                        <p class="card-text">Ofrecemos cortes de pelo a la moda, adaptados a tu estilo. Nuestro equipo de estilistas te asesorará para encontrar el look perfecto.</p>
+                        <h5>Características:</h5>
+                        <ul>
+                            <li>Estilistas profesionales</li>
+                            <li>Asesoría personalizada</li>
+                            <li>Variedad de estilos</li>
+                        </ul>
+                        <form action="productos.html" method="get">
+                            <div class="mb-3">
+                                <label for="servicio-cortes" class="form-label">Escoge una opción:</label>
+                                <select id="servicio-cortes" name="servicio" class="form-select">
+                                    <option value="corte-básico">Corte Básico</option>
+                                    <option value="corte-moda">Corte a la Moda</option>
+                                    <option value="asesoria-look">Asesoría de Look</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Reservar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tratamientos Faciales -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="imagenes.jpg/cosmetc.jpg" alt="Tratamientos Faciales" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Tratamientos Faciales</h3>
+                        <p class="card-text">Disfruta de tratamientos faciales rejuvenecedores y personalizados. Utilizamos productos de alta calidad para el cuidado de tu piel.</p>
+                        <h5>Características:</h5>
+                        <ul>
+                            <li>Productos hipoalergénicos</li>
+                            <li>Tratamientos adaptados a tu tipo de piel</li>
+                            <li>Resultados visibles en pocas sesiones</li>
+                        </ul>
+                        <form action="productos.html" method="get">
+                            <div class="mb-3">
+                                <label for="servicio-faciales" class="form-label">Escoge una opción:</label>
+                                <select id="servicio-faciales" name="servicio" class="form-select">
+                                    <option value="tratamiento-limpieza">Limpieza Facial</option>
+                                    <option value="tratamiento-rejuvenecedor">Rejuvenecedor</option>
+                                    <option value="tratamiento-antiarrugas">Antiarrugas</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Reservar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maquillaje Profesional -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="imagenes.jpg/maquillaje.jpg" alt="Maquillaje Profesional" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Maquillaje Profesional</h3>
+                        <p class="card-text">Realzamos tu belleza con maquillaje profesional para cualquier ocasión. Ya sea un evento especial o una salida casual, estamos aquí para ti.</p>
+                        <h5>Características:</h5>
+                        <ul>
+                            <li>Maquillaje para eventos</li>
+                            <li>Asesoramiento en productos</li>
+                            <li>Durabilidad y acabado impecable</li>
+                        </ul>
+                        <form action="productos.html" method="get">
+                            <div class="mb-3">
+                                <label for="servicio-maquillaje" class="form-label">Escoge una opción:</label>
+                                <select id="servicio-maquillaje" name="servicio" class="form-select">
+                                    <option value="maquillaje-boda">Maquillaje de Boda</option>
+                                    <option value="maquillaje-casual">Maquillaje Casual</option>
+                                    <option value="asesoria-maquillaje">Asesoría de Maquillaje</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Reservar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Manicura y Pedicura -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="imagenes.jpg/manicuras.jpg" alt="Manicura y Pedicura" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Manicura y Pedicura</h3>
+                        <p class="card-text">Ofrecemos manicura y pedicura para que tus manos y pies luzcan perfectos. Relájate en un ambiente agradable y disfruta de nuestros servicios.</p>
+                        <h5>Características:</h5>
+                        <ul>
+                            <li>Variedad de esmaltes y diseños</li>
+                            <li>Tratamientos hidratantes</li>
+                            <li>Ambiente relajante</li>
+                        </ul>
+                        <form action="productos.html" method="get">
+                            <div class="mb-3">
+                                <label for="servicio-manicura" class="form-label">Escoge una opción:</label>
+                                <select id="servicio-manicura" name="servicio" class="form-select">
+                                    <option value="manicura-basica">Manicura Básica</option>
+                                    <option value="manicura-lujo">Manicura de Lujo</option>
+                                    <option value="pedicura-completa">Pedicura Completa</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Reservar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2024 BELLEZA Y ESTÉTICA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
